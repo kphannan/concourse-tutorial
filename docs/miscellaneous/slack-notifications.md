@@ -28,7 +28,7 @@ jobs:
       config:
         platform: linux
         image_resource:
-          type: docker-image
+          type: registry-image
           source: {repository: busybox}
         inputs:
         - name: tutorial
@@ -57,7 +57,7 @@ Specifically for Slack there is a custom Resource Type `cfcommunity/slack-notifi
 ```yaml
 resource_types:
 - name: slack-notification
-  type: docker-image
+  type: registry-image
   source:
     repository: cfcommunity/slack-notification-resource
 ```
@@ -150,7 +150,7 @@ In the preceding section the notification text was hardcoded within the `pipelin
 
 It is also possible to emit success notifications.
 
-In the example below there are two notifications (Slack combines messages from the same sender to save space). Each message contains information that is dynamically 
+In the example below there are two notifications (Slack combines messages from the same sender to save space). Each message contains information that is dynamically
 
 ![slack-webhook-dynamic-messages](/images/slack-webhook-dynamic-messages.png)
 
@@ -175,7 +175,7 @@ jobs:
     config:
       platform: linux
       image_resource:
-        type: docker-image
+        type: registry-image
         source: {repository: busybox}
       inputs:
       - name: tutorial
