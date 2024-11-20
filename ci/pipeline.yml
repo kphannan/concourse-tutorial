@@ -64,7 +64,7 @@ jobs:
         config:
           platform: linux
           image_resource:
-            type: docker-image
+            type: registry-image
             source:
               repository: (( grab meta.image.name ))
               tag: (( grab meta.image.tag ))
@@ -95,7 +95,7 @@ jobs:
         config:
           platform: linux
           image_resource:
-            type: docker-image
+            type: registry-image
             source:
               repository: (( grab meta.image.name ))
               tag: (( grab meta.image.tag ))
@@ -127,7 +127,7 @@ jobs:
         config:
           platform: linux
           image_resource:
-            type: docker-image
+            type: registry-image
             source:
               repository: (( grab meta.image.name ))
               tag: (( grab meta.image.tag ))
@@ -158,7 +158,7 @@ jobs:
         config:
           platform: linux
           image_resource:
-            type: docker-image
+            type: registry-image
             source:
               repository: (( grab meta.image.name ))
               tag: (( grab meta.image.tag ))

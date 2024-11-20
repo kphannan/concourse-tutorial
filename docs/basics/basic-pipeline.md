@@ -22,7 +22,7 @@ jobs:
       config:
         platform: linux
         image_resource:
-          type: docker-image
+          type: registry-image
           source: {repository: busybox}
         run:
           path: echo
@@ -71,7 +71,7 @@ There are two ways to unpause (or re-pause) a pipeline.
 
     ![dashboard-hamburger-menu](/images/dashboard-hamburger-menu.png)
 
-    
+
 
 2. Using the `fly unpause-pipeline` command (or its alias `fly up`):
 
